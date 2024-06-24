@@ -8,13 +8,13 @@ export default StyleSheet.create({
     alignItems: 'center',
     padding: 20,
     paddingTop: 10,
-    paddingBottom: 50, // Ajusta este valor según sea necesario para mover el contenido hacia arriba
+    paddingBottom: 50, 
     backgroundColor: 'black',
   },
   
   image: {
-    width: 250, // Ajusta el ancho de la imagen según sea necesario
-    height: 250, // Ajusta la altura de la imagen según sea necesario
+    width: 250,
+    height: 250, 
     marginBottom: 15,
     boderRadius: 200,
 
@@ -26,8 +26,8 @@ export default StyleSheet.create({
   message: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: 'white', // Color del mensaje blanco
+    color: 'white',
     textAlign: 'center',
-    maxWidth: '80%', // Ajusta el ancho máximo del texto
+    maxWidth: '80%',
   },
 });

@@ -3,15 +3,15 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
   card: {
     flexDirection: 'row',
-    backgroundColor: '#1c1c1c', // Fondo oscuro para el card
+    backgroundColor: '#1c1c1c', 
     borderRadius: 5,
-    shadowColor: '#ff0000', // Detalle rojo en la sombra
+    shadowColor: '#ff0000', 
     shadowOpacity: 0.8,
     shadowRadius: 10,
     padding: 10,
     marginVertical: 5,
     borderWidth: 1,
-    borderColor: '#ff0000', // Borde rojo
+    borderColor: '#ff0000', 
   },
   image: {
     width: 100,
@@ -27,15 +27,15 @@ export default StyleSheet.create({
     fontSize: 18,
     fontWeight: 'bold',
     marginBottom: 5,
-    color: '#ffffff', // Texto blanco
+    color: '#ffffff',
   },
   rating: {
     fontSize: 16,
-    color: '#ff0000', // Texto rojo
+    color: '#ff0000', 
     marginBottom: 5,
   },
   description: {
     fontSize: 14,
-    color: '#bbbbbb', // Texto gris claro
+    color: '#bbbbbb', 
   },
 });

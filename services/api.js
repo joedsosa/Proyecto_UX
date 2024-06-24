@@ -1,6 +1,5 @@
-// api.js o api.ts
 const API_URL = 'https://api.themoviedb.org/3';
-const API_KEY = 'd048fe81b0c408d057d6fb0f55860f11'; // Reemplaza con tu API key de TMDb
+const API_KEY = 'd048fe81b0c408d057d6fb0f55860f11';
 
 export const fetchMovies = async () => {
   try {
@@ -9,7 +8,7 @@ export const fetchMovies = async () => {
       throw new Error('Failed to fetch movies');
     }
     const data = await response.json();
-    return data.results; // Retorna el array de objetos de películas bajo 'results'
+    return data.results; 
   } catch (error) {
     console.error('Error fetching movies:', error.message);
     throw error;

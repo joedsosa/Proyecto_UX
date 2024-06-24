@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, TouchableOpacity, Image } from 'react-native'; // Importa Image
+import { View, Text, TouchableOpacity, Image } from 'react-native'; 
 import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -15,8 +15,6 @@ import { auth } from './services/firebase';
 import { useNavigation } from '@react-navigation/native';
 
 
-
-// Define los tipos necesarios para la navegación
 type RootStackParamList = {
   Login: undefined;
   SignUp: undefined;
@@ -41,7 +39,6 @@ const tabBarIcon = (
 ) => {
   let tabLabel = '';
 
-  // Asignamos el texto para cada ruta
   if (route.name === 'Home') {
     tabLabel = '🏠︎';
   } else if (route.name === 'Profile') {

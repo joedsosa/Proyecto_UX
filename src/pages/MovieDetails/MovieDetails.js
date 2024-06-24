@@ -1,4 +1,3 @@
-// MovieDetailsScreen.js
 import React from 'react';
 import { View, Text, Image } from 'react-native';
 import MainTemplate from '../../templates/MainTemplate/MainTemplate';

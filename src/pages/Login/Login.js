@@ -6,7 +6,7 @@ import Button from '../../components/atoms/Button/Button';
 import CustomInput from '../../components/atoms/Input/Input';
 import { signIn } from '../../../services/auth';
 
-import loginImage from '../../assets/logo.jpeg'; // Ajusta la ruta según donde esté ubicada tu imagen
+import loginImage from '../../assets/logo.jpeg'; 
 
 const Login = ({ navigation }) => {
   const [email, setEmail] = useState('');
