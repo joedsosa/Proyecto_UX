@@ -4,8 +4,6 @@ import { NavigationContainer, RouteProp } from '@react-navigation/native';
 import { createStackNavigator, StackNavigationProp } from '@react-navigation/stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import homeIcon from './src/assets/homeIcon.png';
-import profileIcon from './src/assets/profileIcon.png';
 import LoginScreen from './src/pages/Login/Login';
 import SignUpScreen from './src/pages/SignUp/SignUp';
 import HomeScreen from './src/pages/Home/Home';
@@ -41,15 +39,16 @@ const tabBarIcon = (
   color: string,
   size: number
 ) => {
-  let iconSource;
+  let tabLabel = '';
 
+  // Asignamos el texto para cada ruta
   if (route.name === 'Home') {
-    iconSource = homeIcon;
+    tabLabel = '🏠︎';
   } else if (route.name === 'Profile') {
-    iconSource = profileIcon;
+    tabLabel = '👤';
   }
 
-  return <Image source={iconSource} style={{ width: size, height: size, tintColor: color }} />;
+  return <Text style={{ color: focused ? '#ffffff' : '#aaaaaa', fontSize: 25 }}>{tabLabel}</Text>;
 };
 
 const HeaderRight = () => {

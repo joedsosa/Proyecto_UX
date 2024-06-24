@@ -1,11 +1,12 @@
 import React from 'react';
 import { TextInput, StyleSheet } from 'react-native';
+import inputStyles from './Input.styles'; // Importa los estilos desde Input.styles.js
 
 const CustomInput = (props) => {
   return (
     <TextInput
       {...props}
-      style={[styles.input, props.style]} // Fusiona los estilos del componente con los estilos personalizados
+      style={[styles.input, inputStyles.input, props.style]} // Fusiona los estilos del componente con los estilos personalizados y los estilos de Input.styles.js
       placeholderTextColor="white" // Color del placeholder blanco
       selectionColor="white" // Color del cursor de texto
     />

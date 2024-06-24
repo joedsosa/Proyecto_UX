@@ -7,8 +7,11 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: 20,
-    backgroundColor: 'black', // Fondo negro
+    paddingTop: 10,
+    paddingBottom: 50, // Ajusta este valor según sea necesario para mover el contenido hacia arriba
+    backgroundColor: 'black',
   },
+  
   image: {
     width: 250, // Ajusta el ancho de la imagen según sea necesario
     height: 250, // Ajusta la altura de la imagen según sea necesario

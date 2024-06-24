@@ -1,12 +1,14 @@
 import React from 'react';
-import { View, Image, Text } from 'react-native'; // Añade importación de Text
+import { View, Image, Text } from 'react-native';
 import styles from './AuthTemplate.styles';
 
-const AuthTemplate = ({ children, imageSource }) => (
+const AuthTemplate = ({ children, imageSource, title }) => (
   <View style={styles.container}>
-    <Image source={imageSource} style={styles.image} />
+    {imageSource && (
+      <Image source={imageSource} style={styles.image} />
+    )}
     <View style={styles.messageContainer}>
-      <Text style={styles.message}>Welcome to Stream-IT!</Text>
+      <Text style={styles.message}>{title}</Text>
     </View>
     {children}
   </View>
