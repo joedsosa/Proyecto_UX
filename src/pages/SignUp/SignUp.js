@@ -17,9 +17,11 @@ const SignUp = ({ navigation }) => {
         Alert.alert('User Created Successfully', 'You can now login with your new account.');
       })
       .catch((error) => {
-        if (error.code === 'auth/email-already-in-use'|| error.code === 'auth/invalid-email') {
+        if (error.code === 'auth/email-already-in-use') {
           Alert.alert('Email Already in Use', 'Please choose another email address.');
-        } else {
+        } else if (error.code === 'auth/invalid-email'){
+          Alert.alert('Failed to Sign Up', 'Invalid email address.');
+        }else{
           console.error(error);
           Alert.alert('Sign Up Failed', 'An error occurred. Please try again later.');
         }
